@@ -1,0 +1,8 @@
+docker
+fastapi
+uvicorn
+websockets
+pydantic[email]
+python-dateutil
+PyYAML
+yagmail

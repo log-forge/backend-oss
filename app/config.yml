@@ -1,0 +1,18 @@
+email:
+  enabled: true
+  recipients: {}
+  sender: '' # The email address that will send the alerts
+  app_password: ''  # Use an app password for mail, not your actual password
+  alert_interval_hours: 1
+
+
+alert:
+  keywords:
+    - ERROR
+    - Error
+    - Exception
+    - FATAL
+    - Traceback
+    - WARNING
+    - Warning
+  cooldown_seconds: 30  # minimum delay between alerts per container

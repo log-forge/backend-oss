@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  logforge-backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: logforge-backend
+    container_name: ${BACKEND_SERVICE_CONTAINER_NAME:-logforge-backend}
+    environment:
+      PORT: "${BACKEND_SERVICE_PORT:-8000}"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    restart: always
+    ports:
+      - "${EXPOSED_BACKEND_PORT:-8000}:${BACKEND_SERVICE_PORT:-8000}"
