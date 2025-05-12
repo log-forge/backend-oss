@@ -22,4 +22,8 @@ for API endpoints, head to:
 ```bash
 http://localhost:<your_port>/docs
 ```
+<<<<<<< HEAD
 By default the port is `8000`.
+=======
+By default the port is `8000`.
+>>>>>>> 5bd19202a2e61cb2550f3752fd278751fbb9f3b1
